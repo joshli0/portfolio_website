@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>Joshua Li | Developer</title>
+
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="joshli, Joshua Li, computer, science, python, javascript, java, coding" />
+
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="Joshua Li | Developer" />
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/logojl.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://devfolio.js.org/" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="Joshua Li | Developer" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Made using DevFolio Template" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- Again fill content attr with the URL of this portfolio you'll host -->
+    <meta property="twitter:url" content="https://devfolio.js.org" />
+    <!-- Recommended to use the same text used within <title> element -->
+    <meta property="twitter:title" content="[Your name here] | Developer" />
+    <!-- short description that shows up while your portfolio is shared -->
+    <meta
+      property="twitter:description"
+      content="Made using DevFolio Template"
+    />
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.vercel.app/assets/devfolio.png"
+    />
+
+    <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FontAwesome Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is <span class="text-color-main name">Joshua Li</span>
+          <br />
+          Learn more about my coding journey
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">Let's Go!</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/profile.jpg"
+              alt="Profile Image"
+              width="450"
+              height="350"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              I am a recent graduate with a degree in Computer Science, with a drive to
+              learn as much as I can about the digital world. Since I was young, I've 
+              had a passion for problem-solving.Over the years, I've delved into coding 
+              and algorithms, gaining proficiency in web application development
+              and working collaboratively.
+            </p>
+            <p class="about-wrapper__info-text">
+              My journey in computer science has been more than just learning lines of 
+              code—it's been about embracing the creative challenges that come with it.
+            </p>
+            <p class="about-wrapper__info-text">
+              Beyond the technical realm, I see computer science as a powerful tool for 
+              positive change. I'm enthusiastic about exploring how technology can address 
+              real-world issues and contribute to innovate solutions.
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="./assets/joshli_resume.pdf" class="cta-btn cta-btn--resume" target="_blank">View Resume</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+          
+            <!-- Each .row is a project -->
+            <article class="row">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Spotify Song Recommender</h3>
+                <p class="project-wrapper__text-info">
+                  A web application built with Python, Spotipy, and Streamlit. This application
+                  allows users to get song recommendations based on an entered song. Each 
+                  recommendation shows the song title, artist, album art, and has a button that 
+                  leads to the song on Spotify.
+                </p>
+                <div class="project-wrapper__text-btns">
+                  <a
+                    href="https://songrecs.streamlit.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cta-btn cta-btn--hero cta-btn--projects"
+                    >See Live</a
+                  >
+                  <a href="https://github.com/joshli0/spotify_song_recommender" target="_blank" class="cta-btn text-color-main"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+  
+              <div class="project-wrapper__image">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <div class="thumbnail rounded">
+                    <img
+                      src="./assets/project3.png"
+                      class="img-fluid"
+                      alt="Project Image"
+                      width="1366"
+                      height="767"
+                    />
+                  </div>
+                </a>
+              </div>
+            </article>
+            <!-- /END Project -->
+
+            <!-- Each .row is a project -->
+            <article class="row">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">HoopGrids Assists</h3>
+                <p class="project-wrapper__text-info">
+                  This application helps find common NBA players between teams and players for 
+                  basketball daily game HoopGrids by scraping information from online sources.
+                  Built with Python.
+                </p>
+                <div class="project-wrapper__text-btns">
+                  <a
+                    href="https://github.com/joshli0/hoopgrids_assists"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cta-btn cta-btn--hero cta-btn--projects"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+
+              <div class="project-wrapper__image">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <div class="thumbnail rounded">
+                    <img
+                      src="./assets/project2.png"
+                      class="img-fluid"
+                      alt="Project Image"
+                      width="1366"
+                      height="767"
+                    />
+                  </div>
+                </a>
+              </div>
+            </article>
+            <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Python Testing Website</h3>
+              <p class="project-wrapper__text-info">
+                A full stack web application built with a 3-person team. 
+                It allows teachers to create a bank of Python questions with test cases and difficulty 
+                levels and select from the question bank to make a test for students to take.
+                Teachers can automatically or manually grade tests, write comments, and release 
+                grades to students. Built with Python, HTML, CSS, Javascript, and Flask
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                    href="https://github.com/joshli0/cs490"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cta-btn cta-btn--hero cta-btn--projects"
+                    >Source Code</a
+                  >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/project1.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">To connect with me, email me or find me on my LinkedIn and Github below!</p>
+          <a href="mailto:joshuadli2023@gmail.com" class="cta-btn cta-btn--resume">Email Me</a>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/joshdli/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/joshli0"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year">
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
+</html>
